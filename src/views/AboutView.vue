@@ -1,5 +1,30 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <content-header title="Tentang" icon="fas fa-info-circle"/>
+  <content>
+    <div class="row">
+      <div class="col-12">
+
+        <div class="card">
+          <div class="card-header">
+            <h3 class="card-title">Tentang</h3>
+            <div class="card-tools">
+              <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+                <i class="fas fa-minus"></i>
+              </button>
+              <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+          <div class="card-body">
+            Start creating your amazing application!
+          </div>
+          <div class="card-footer">
+            Footer
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </content>
 </template>
