@@ -2,27 +2,36 @@
 <html lang="">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <link rel="icon" href="<%= BASE_URL %>favicon/favicon.ico">
-  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon/favicon-16x16.png">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <link rel="icon" href="<%= BASE_URL %>favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon/favicon-16x16.png" />
   <title>
     <%= htmlWebpackPlugin.options.title %>
   </title>
 
   <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
-  <link rel="stylesheet" href="./templates/plugins/fontawesome-free/css/all.min.css">
-  <link rel="stylesheet" href="./templates/dist/css/adminlte.min.css">
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback" />
+  <link rel="stylesheet" href="./templates/plugins/fontawesome-free/css/all.min.css" />
+  <link rel="stylesheet" href="./templates/dist/css/adminlte.min.css" />
+
+  <!-- pace-progress -->
+  <link rel="stylesheet" href="./templates/plugins/pace-progress/themes/black/pace-theme-flat-top.css" />
+
+  <!-- DataTables -->
+  <link rel="stylesheet" href="./templates/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="./templates/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="./templates/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
 </head>
 
-<body class="hold-transition sidebar-mini sidebar-collapse">
+<body class="hold-transition sidebar-mini sidebar-collapse pace-primary">
   <noscript>
-    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
-        Please enable it to continue.</strong>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+        properly without JavaScript enabled. Please enable it to
+        continue.</strong>
   </noscript>
   <div id="app"></div>
   <!-- built files will be auto injected -->
@@ -30,6 +39,15 @@
   <script src="./templates/plugins/jquery/jquery.min.js"></script>
   <script src="./templates/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="./templates/dist/js/adminlte.min.js?v=3.2.0"></script>
+    <!-- pace-progress -->
+  <script src="./templates/plugins/pace-progress/pace.min.js"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="./templates/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="./templates/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="./templates/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="./templates/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="./templates/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="./templates/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
 </body>
 
 </html>
